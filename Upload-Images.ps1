@@ -92,12 +92,6 @@ if($ItemsToPost.count -gt 0){
             error = $errorMessage
         }
         $obj | Export-csv -path $log_file -Append -NoTypeInformation
-        
-        # Write to output
-        Write-Host (Get-Date)
-        Write-Host "Waiting for 15 secs..."
-        Start-Sleep -s 15
-
     }
     # Start-Sleep -Seconds 15
     # Uncomment and set seconds value to limit upload rate
